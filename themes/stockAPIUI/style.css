@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 15px solid;
+}
+
+.frame {
+    background-color: white;
+    border: 3px solid black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+.heading-box {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: black 2px solid;
+}
+
+.heading-h2 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    color: white;
+}
+
+.live-pricing {
+    display: flex;
+}
+
+.live-pricing > .li {
+    display: flex;
+}
+
+.live-pricing > .li > .card {
+    width: 175px;
+    margin-left: 2px;
+    border: 1px solid black;
+}
+
+.par {
+    width: 101px;
+}
+
+.small {
+    text-align: left;
+    font-size: 15px !important;
+}
+
+.buttons {
+    display: flex;
+}
+
+.right-btn1 {
+    background-color: black;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    flex: 50%;
+}
+
+.right-btn2 {
+    background-color: black;
+    font-weight: 500;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    flex: 50%;
+    margin-left: 3px;
+}
+
+.right > video {
+    width: 100%;
+}
+
+.button-sensor {
+    z-index: 20;
+}
+
+.title {
+    color: black;
+    position: relative;
+    top: 2px;
+    right: 4px;
+}
+
+.notify{
+     margin-left: -8px;
+}
+
+.notifymodal {
+    background-color: rgb(235, 54, 54);
+    color: white;
+}
+
+/* animated button of live chat */
+
+.animatedbtn {
+    background-image: linear-gradient(to right, #363339 0%, #8e949f 100%);
+    border: 0px solid #2e2e3020;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.25s ease;
+    width: 210px;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.animatedbtn:not(.loading):hover {
+    box-shadow: 0px 2px 15px 0px #27292b;
+}
+
+.animatedbtn:not(.loading):hover i {
+    transform: translate(7px);
+}
+
+.animatedbtn i {
+    font-size: 1.45rem;
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+    z-index: 10;
+    background: inherit;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+}
+
+.animatedbtn .text {
+    width: 130px;
+    display: block;
+    position: absolute;
+    left: 60px;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.loading-animate {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    border-radius: 50%;
+    top: 0;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.loading-animate:after {
+    content: "";
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: 3px solid #fff;
+    animation: loading infinite 0.8s ease 0.05s;
+    position: absolute;
+}
+
+.loading-animate:before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left: 3px solid #fff;
+    animation: loading infinite 0.8s linear;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.animatedbtn.loading {
+    width: 60px;
+}
+
+.animatedbtn.loading i {
+    transform: rotate(-90deg);
+    padding-bottom: 4px;
+    padding-left: 3px;
+}
+
+.animatedbtn.loading .text {
+    transform: translate(-140px);
+}
+
+.animatedbtn.loading .loading-animate {
+    opacity: 1;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink {
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 0.8;
+    }
+}
+
+.fa-bars {
+    font-size: 20px;
+    color: white;
+    margin: 15px 20px;
+    cursor: pointer;
+}
+
+.content {
+    font-size: 18px;
+    font-weight: 400;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.content2 {
+    font-size: 22px;
+    font-weight: 500;
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+section {
+    margin: 10px auto;
+}
+
+.a4 {
+    margin: 20px auto;
+    margin-bottom: 0;
+    width: 97%;
+    height: 842px;
+}
+
+.disclaimer {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border: 2px solid black;
+}
+
+@media (max-width: 1500px) and (min-width: 990px) {
+    .nav-list-item > a {
+        border: 2px solid black;
+        text-decoration: none;
+        color: black;
+        padding: 8px;
+        border-color: black;
+        transition: all 0.2s ease-out;
+    }
+
+    .live-pricing > .li > .card {
+        width: 122px;
+        margin-left: 2px;
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 1200px) {
+    .heading-h2 {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 27px;
+        color: white;
+    }
+
+    .navlist > li > a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .navlist {
+        width: 98%;
+    }
+
+    .live-pricing {
+        flex-direction: column;
+    }
+
+    .live-pricing > .li > .card {
+        width: 190px;
+    }
+
+    .live-pricing > .li > .card > .card-body > h5 {
+        font-size: 25px;
+    }
+
+    .live-pricing > .li > .card > .card-body > p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .heading-h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .live-pricing {
+        flex-direction: column;
+    }
+
+    .live-pricing > .li > .card {
+        width: 131px;
+    }
+
+    .live-pricing > .li > .card > .card-body > h5 {
+        font-size: 18px;
+    }
+
+    .live-pricing > .li > .card > .card-body > p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 697px) {
+    .heading {
+        margin: 10px 10px;
+    }
+
+    .heading-h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .live-pricing > .li > .card {
+        width: 160px;
+    }
+
+    .live-pricing > .li > .card > .card-body > h5 {
+        font-size: 20px;
+    }
+
+    .live-pricing > .li > .card > .card-body > p {
+        font-size: 16px;
+    }
+
+    .content {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .a4 {
+        height: 480px;
+    }
+
+    .disclaimer {
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading {
+        margin: 5px 5px;
+    }
+
+    .heading-h2 {
+        font-size: 15px;
+    }
+
+    .live-pricing > .li > li {
+        font-size: 10px;
+    }
+
+    .live-pricing > li {
+        font-size: 20px;
+        padding: 2px;
+        margin: 10px auto;
+        overflow: hidden;
+    }
+
+    .fa-bars {
+        font-size: 12px;
+        margin: 8px 25px;
+    }
+
+    .exitmenu {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 75%;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    .a4 {
+        height: 480px;
+    }
+
+    .disclaimer {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    section {
+        width: 83.5%;
+    }
+
+    .chatbox {
+        width: 6%;
+    }
+}
+
+@media (max-width: 435px) {
+    .heading-h2 {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        color: white;
+    }
+
+    .live-pricing > .li > .card > .card-body > h5 {
+        font-size: 16px;
+    }
+
+    .live-pricing > .li > .card {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    .heading-h2 {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 12px;
+        color: white;
+    }
+
+    .live-pricing > .li > .card > .card-body > h5 {
+        font-size: 12px;
+    }
+
+    .live-pricing > .li > .card > .card-body > p {
+        font-size: 10px;
+    }
+
+    .content {
+        font-size: 8px;
+    }
+
+    .heading {
+        margin: 5px;
+    }
+
+    .right {
+        margin: 5px;
+    }
+
+    .a4 {
+        height: 350px;
+        width: 70%;
+    }
+
+    .disclaimer {
+        width: 58%;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 321px) {
+    .live-pricing > .li > li {
+        font-size: 15px;
+        padding: 0px;
+        margin: 5px auto;
+        width: 73px;
+    }
+
+    @media (max-width: 297px) {
+        .live-pricing > .li > li {
+            font-size: 13px;
+            padding: 0px;
+            margin: 2px auto;
+            width: 60px;
+        }
+
+        .heading-h2 {
+            font-weight: 500;
+            font-style: normal;
+            font-size: 10px;
+            color: white;
+        }
+
+        .buttons {
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 251px) {
+        .heading-h2 {
+            font-size: 8px;
+        }
+
+        .live-pricing > .li > li {
+            font-size: 10px;
+            padding: 0px;
+            margin: 2px auto;
+        }
+
+        .content {
+            font-size: 8px;
+            width: 65%;
+        }
+
+        .heading {
+            margin: 2px;
+        }
+
+        .right {
+            width: 40%;
+            margin: 2.5px;
+        }
+
+        .a4 {
+            height: 250px;
+            width: 85%;
+        }
+
+        .disclaimer {
+            width: 68%;
+            font-size: 8px;
+        }
+    }
+}
+
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+}
+
+.modalpdf {
+    height: auto;
+    width: 100vw;
+    height: 100vh;
+}
+.modal.modal-fullscreen .modal-body {
+    overflow-y: auto;
+}

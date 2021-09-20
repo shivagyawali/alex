@@ -1,0 +1,140 @@
+
+
+body{
+    background-color: #B4B4B4;
+
+    border-top: 36px solid black;
+    border-bottom: 36px solid black;
+}
+.wrapper{
+    background-color: #B4B4B4;
+
+
+}
+
+.api{
+    margin-right:23px;
+}
+
+.black{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    background-color: #B4B4B4;
+    border: 36px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.row .left{
+    margin-top: 20px;
+}
+
+.header .header-text{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    FONT-WEIGHT: BOLD;
+}
+.row .menu{
+    margin-top: 20px;
+
+}
+ul li{
+    display: inline;
+    border: 1px solid black;
+    padding: 1px;
+    margin:3px;
+}
+
+ul li a{
+    color: black;
+
+}
+
+.about-us{
+    border: 1px solid black;
+}
+
+
+
+.dark-audio-text p{
+ background-color: black;
+ margin-bottom: 3px;
+ color: white;
+ padding: 2px;
+}
+
+.dark-audio-text h3{
+    background-color: black;
+    margin-top: 1px;
+    color:white;
+    padding: 2px;
+   }
+
+
+   .email-form,.live-chat{
+       border: 1px solid black;
+   }
+
+   .api button{
+       font-size: 10px;
+       min-height: 53px;
+       min-width: 110px;
+   }
+
+
+
+   /* full screen modal */
+
+   .modal-dialog-full-width {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width:100% !important;
+
+}
+
+.modal-content-full-width  {
+    height: 100% !important;
+    min-height: 100% !important;
+
+    border-radius: 0 !important;
+    background-color: #ececec !important
+}
+
+.modal-header-full-width  {
+    border-bottom: 1px solid #9ea2a2 !important;
+}
+
+.modal-footer-full-width  {
+    border-top: 1px solid #9ea2a2 !important;
+}
+
+
+
+/* loader */
+
+
+#message-after-countdown{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+#countdown{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#loader{
+    font-weight: bold;
+    font-size: 30px;
+}

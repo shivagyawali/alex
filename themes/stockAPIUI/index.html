@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>D ALgorithm</title>
+
+</head>
+
+<body>
+
+     <div class=" frame">
+         <header>
+             <div class="row">
+                 <div class="col-sm-7 ">
+                     <div class="heading-box">
+                         <h2 class="heading-h2">LEARN TO TRADE WITH THE AWESOME DECAGON ALGORITHM INITIAL FREE PROOF
+                             TRIAL,TRADING,CONSULTANCY,COURSES</h2>
+                     </div>
+                     <ul class="live-pricing">
+                         <div class="li">
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Dow</h5>
+                                     <p class="card-text">RateNo</p>
+                                 </div>
+                             </div>
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Nasdaq</h5>
+                                     <p class="card-text">RateNo</p>
+                                 </div>
+                             </div>
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Ftse</h5>
+                                     <p class="card-text">RateNo</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="li">
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Usd</h5>
+                                     <p class="card-text"> 1.00 </p>
+                                 </div>
+                             </div>
+
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Euro/Usd</h5>
+                                     <p class="card-text">RateNo</p>
+                                 </div>
+                             </div>
+
+                             <div class="card">
+                                 <div class="card-body">
+                                     <h5 class="card-title">Gold</h5>
+                                     <p class="card-text">RateNo</p>
+                                 </div>
+                             </div>
+
+                         </div>
+                     </ul>
+                 </div>
+
+                 <div class="col-sm-5">
+                     <div class="right">
+                         <video src="Earth.mp4" autoplay muted loop>
+                         </video>
+                     </div>
+
+                     <div class="buttons">
+                         <!-- Trigger/Open The Modal -->
+                         <!-- Button trigger modal -->
+                         <button id="swag" type="button" class="right-btn1" data-toggle="modal"
+                             data-target="#exampleModalCenter">
+                             Email Us
+                         </button>
+                         <button type="button" class="right-btn2" data-toggle="modal"
+                             data-target="#exampleModalCenterLiveChat" data-backdrop="static">
+                             Live Chat
+                         </button>
+                     </div>
+
+                     <!-- Modal -->
+                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered" role="document">
+                             <div class="modal-content">
+                                 <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLongTitle">Email Us</h5>
+                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span>
+                                     </button>
+                                 </div>
+                                 <div class="modal-body">
+                                     <form method="POST" action="{{ route('message.save') }}">
+                                         @csrf
+                                         <div class="form-group">
+                                             <label for="recipient-name" class="col-form-label">Name:</label>
+                                             <input type="text" class="form-control" name="name" id="recipient-name"
+                                                 required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="email" class="col-form-label">Your email:</label>
+                                             <input type="eamil" class="form-control" name="email" id="email" required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="phone" class="col-form-label">Mobile number:</label>
+                                             <input type="tel" class="form-control" id="phone" name="phone" required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="country" class="col-form-label">Country:</label>
+                                             <input type="text" class="form-control" id="country" name="country" required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="message-text" class="col-form-label">Message:</label>
+                                             <textarea class="form-control" id="message-text" name="message"
+                                                 required></textarea>
+                                         </div>
+
+                                 </div>
+                                 <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                     <button type="submit" class="btn btn-secondary">Send Mail</button>
+                                 </div>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+
+
+                     <!--Live Chat Modal -->
+                     <div class="modal " id="exampleModalCenterLiveChat" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered" role="document">
+                             <div class="modal-content">
+                                 <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLongTitle">Live Chat</h5>
+                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span>
+                                     </button>
+                                 </div>
+                                 <div class="modal-body">
+                                     <form id="exampleModalLiveChatForm" class="form">
+                                         @csrf
+                                         <div class=" form-group">
+                                             <label for="recipient-name" class="col-form-label">Name:</label>
+                                             <input type="text" name="name" class="form-control" id="chat-name" required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="recipient-name" class="col-form-label">Email address:</label>
+                                             <input type="text" class="form-control" name="email" id="chat-address"
+                                                 required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="recipient-name" class="col-form-label">Mobile Number:</label>
+                                             <input type="text" class="form-control" name="phone" id="chat-number"
+                                                 required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="recipient-name" class="col-form-label">Country:</label>
+                                             <input type="text" class="form-control" name="country" id="chat-country"
+                                                 required>
+                                         </div>
+                                         <div class="form-group">
+                                             <label for="recipient-name" class="col-form-label">Message:</label>
+                                             <textarea type="text" cols="10" rows="10" class="form-control" name="message"
+                                                 id="chat-message" required></textarea>
+                                         </div>
+
+                                 </div>
+                                 <div class="modal-footer">
+                                     <button type="button" class="animatedbtn btn-secondary"
+                                         data-dismiss="modal">Close</button>
+
+                                     <button type="submit" id="animebtn" class="animatedbtn" type="submit">
+                                         <i class="far fa-paper-plane"></i>
+                                         <span class="text">
+                                             Chat Request
+                                         </span>
+                                         <span class="loading-animate"></span>
+                                     </button>
+
+                                 </div>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+
+
+                     <!--Notify Modal -->
+                     <div class="modalnotigy modal fade " id="exampleModalCenterNotify" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered" role="document">
+                             <div class="notify modal-content">
+                                 <div class="notifymodal modal-body">
+                                     Line are busy or unmanned We will get to you shortly..
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </header>
+
+         <div class="navbarClass">
+             <nav class="navbar navbar-expand-lg navbar-light">
+                 <button class="navbar-toggler button-sensor" type="button" data-toggle="collapse"
+                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto  nav-fill w-100">
+
+                         <li class="nav-item nav-list-item mr-2">
+                             <a class="nav-link" data-toggle="modal" data-target="#" href="#">NavItem</a>
+                         </li>
+                         <li class="nav-item nav-list-item mr-2">
+                             <a class="nav-link" data-toggle="modal" data-target="#" href="#">NavItem</a>
+                         </li>
+                         <li class="nav-item nav-list-item mr-2">
+                             <a class="nav-link" data-toggle="modal" data-target="#" href="#">NavItem</a>
+                         </li>
+                         <li class="nav-item nav-list-item mr-2">
+                             <a class="nav-link" data-toggle="modal" data-target="#" href="#">NavItem</a>
+                         </li>
+                         <li class="nav-item nav-list-item mr-2">
+                             <a class="nav-link" data-toggle="modal" data-target="#" href="#">NavItem</a>
+                         </li>
+
+
+
+
+                     </ul>
+                 </div>
+             </nav>
+         </div>
+
+         <!--Navbar Modal -->
+
+         <div class="modal fade modal-fullscreen" id="" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered " role="document">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLongTitle">Name</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                     </div>
+                     <div class="modal-body ">
+                         <iframe src="" class="modalpdf modal-fullscreen"></iframe>
+                     </div>
+                     <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+
+         <div class="content">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos possimus, a at ipsam voluptatem quis eaque
+                 earum, excepturi est quibusdam dolores perspiciatis laudantium vitae ut reiciendis, porro molestias aut.
+                 Harum?</p>
+         </div>
+
+
+
+         <div class="content2">
+             <p>FREE PROOF, TRAIL, AND TRADING. <br /> WORLD FIRST ILLUSTRATED TRADING ACCOUNT</p>
+         </div>
+
+         <section>
+             <div class="box">
+                 <div class="a4">
+                     <img src="" alt="">
+                 </div>
+
+                 <div class="disclaimer">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptas iste. Mollitia voluptatem
+                     ratione amet aliquam quia eveniet hic voluptatibus iste reiciendis iusto tenetur impedit molestias
+                     placeat esse, praesentium doloremque soluta. Perferendis consequatur iste laborum totam placeat
+                     deleniti. Voluptates cupiditate ut amet eum quia delectus doloribus earum autem. Ab ex nemo, ducimus
+                     delectus quam voluptate deleniti rerum officia. Iste, dolor?
+                 </div>
+
+             </div>
+         </section>
+
+     </div>
+</body>
+
+
+
+
+     <script src="./Js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</html>
